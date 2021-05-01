@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="13dp"
+        android:orientation="vertical"
+        app:cardElevation="6dp"
+        >
+        <!--app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/viewback">
+
+        <TextView
+            android:id="@+id/list_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/list_Sci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/list_ID"
+            android:layout_gravity="right"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/list_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_ID"
+            android:text="TextView"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
